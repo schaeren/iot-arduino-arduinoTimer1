@@ -7,9 +7,9 @@ const int buttonPin = 2;    // button
 
 // Delay to be used to debounce button [ms]
 unsigned long debouncingTime = 100;
-// timer may be used for up to 2 concurrent timers, i.e. one interval timer
-// for green LED and one single-shot timer for red LED.
-// See also https://github.com/contrem/arduino-timer
+// timer is a 'software timer'. <2> indicates that up to 2 instances may be used concurrently. 
+// One interval timer is used for green LED and one single-shot timer is used for red LED.
+// For more information see also https://github.com/contrem/arduino-timer
 Timer<2> timer;
 
 unsigned long lastButtonDownTime = 0;
@@ -28,7 +28,7 @@ void onButtonDown() {
 
         lastButtonDownTime = now;
         digitalWrite(redLedPin, HIGH);
-        timer.every(2000, onSwitchOffRedLed);
+        timer.in(2000, onSwitchOffRedLed);
     }
 }
 
