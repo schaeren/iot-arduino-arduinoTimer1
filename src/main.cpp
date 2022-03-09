@@ -2,7 +2,7 @@
 #include "arduino-timer.h"
 
 const int greenLedPin = 10; // green LED
-const int redLedPin = 12;   // red LED
+const int redLedPin = 13;   // red LED
 const int buttonPin = 2;    // button
 
 // Delay to be used to debounce button [ms]
