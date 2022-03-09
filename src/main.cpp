@@ -17,7 +17,6 @@ unsigned long lastButtonDownTime = 0;
 bool onSwitchOffRedLed(void *);
 
 void onButtonDown() {
-    int oldButtonState = digitalRead(buttonPin);
     unsigned int now = millis();
     if (now - lastButtonDownTime > debouncingTime) {
         Serial.print("Button DOWN, last call to onButtonDown() at ");
