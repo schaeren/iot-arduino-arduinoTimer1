@@ -7,6 +7,7 @@ const int buttonPin = 2;    // button
 
 // Delay to be used to debounce button [ms]
 unsigned long debouncingTime = 100;
+
 // timer is a 'software timer'. <2> indicates that up to 2 instances may be used concurrently. 
 // One interval timer is used for green LED and one single-shot timer is used for red LED.
 // For more information see also https://github.com/contrem/arduino-timer
