@@ -1,4 +1,4 @@
-# iot-arduino-interrupt1
+# iot-arduino-timer-library
 
 Target system: Arduino Uno
 
