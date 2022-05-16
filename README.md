@@ -1,13 +1,9 @@
 # iot-arduino-timer-library
 
+Use arduino-timer library to have multiple software timers (example for Arduino Uno).
+
 Target system: Arduino Uno
 
-MCU: ATmega 328P
+Development environment: Visual Studio Code with PlatformIO.
 
-Required VS Code extensions:
-- PlatformIO
-
-Optional VS Code extensions:
-- C/C++
-
-See allso: https://www.schaerens.ch/iot-arduino-timer-library/
+Documentation: https://www.schaerens.ch/iot-arduino-timer-library/
